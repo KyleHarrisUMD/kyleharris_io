@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Me</title>
+    {% load static from staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
-  <div>
-      <form action="" method="post">
+  <div class="styled_form">
+      <form action="" method="post"  class="styled_form">
       {{form.as_p}}
       {% csrf_token %}
           <input type="submit">
       </form>
-
   </div>
 </body>
 </html>
