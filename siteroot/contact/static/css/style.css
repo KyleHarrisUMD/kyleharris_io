@@ -1,3 +1,7 @@
-body{
-    background-color: aqua;
+form label{
+    padding-right: 10px;
+}
+
+.contact_text {
+    color : #555;
 }
